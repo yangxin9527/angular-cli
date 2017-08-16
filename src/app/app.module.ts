@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
@@ -7,6 +8,9 @@ import { TestInterpolationComponent } from './test-interpolation/test-interpolat
 import { TestEventBindingComponent } from './test-event-binding/test-event-binding.component';
 import { TestNgClassComponent } from './test-ng-class/test-ng-class.component';
 import { TestNgForComponent } from './test-ng-for/test-ng-for.component';
+import { TestNgIfComponent } from './test-ng-if/test-ng-if.component';
+import { TestNgModelComponent } from './test-ng-model/test-ng-model.component';
+import { TestNgStyleComponent } from './test-ng-style/test-ng-style.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +19,14 @@ import { TestNgForComponent } from './test-ng-for/test-ng-for.component';
     TestInterpolationComponent,
     TestEventBindingComponent,
     TestNgClassComponent,
-    TestNgForComponent
+    TestNgForComponent,
+    TestNgIfComponent,
+    TestNgModelComponent,
+    TestNgStyleComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
