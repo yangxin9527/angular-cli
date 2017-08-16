@@ -9,3 +9,13 @@
 - animation分支，示范动画的用法
 - dynamic-component分支，示范动态组件的各种玩法
 - shadowdom分支，示范影子DOM的玩法
+
+
+以上是damoqiongqiu 的demo
+## 我的分支
+- my-template
+- my-communication
+- my-lifecycle
+- my-animation
+- my-dynamic-component
+- my-shadowdom
