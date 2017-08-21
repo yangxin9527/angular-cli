@@ -1,0 +1,14 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">安全取值</div>
+    <div class="panel-body">
+      <p>很多时候得到的json数据的属性没有，你取他的那个属性为空，你取他的那个属性下的某个属性会报错，这时使用安全取值currentRace?.name</p>
+      <p>姓名：{{currentRace?.name}}</p>
+      <p>age：{{currentRace?.age}}</p>
+      <p>荣誉：</p>
+      <ul>
+        <li *ngFor= "let prize of currentRace.detail?.prize">{{prize}}</li>
+      </ul>
+      <p>介绍：{{currentRace?.detail?.introduce}}</p>
+      <p>女朋友：{{currentRace.detail?.girlfriend}}</p>
+    </div>
+  </div>

@@ -11,6 +11,10 @@ import { TestNgForComponent } from './test-ng-for/test-ng-for.component';
 import { TestNgIfComponent } from './test-ng-if/test-ng-if.component';
 import { TestNgModelComponent } from './test-ng-model/test-ng-model.component';
 import { TestNgStyleComponent } from './test-ng-style/test-ng-style.component';
+import { TestNgSwitchComponent } from './test-ng-switch/test-ng-switch.component';
+import { TestPipeComponent } from './test-pipe/test-pipe.component';
+import { TestSafeNavComponent } from './test-safe-nav/test-safe-nav.component';
+import { TestLocalVariableComponent } from './test-local-variable/test-local-variable.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { TestNgStyleComponent } from './test-ng-style/test-ng-style.component';
     TestNgForComponent,
     TestNgIfComponent,
     TestNgModelComponent,
-    TestNgStyleComponent
+    TestNgStyleComponent,
+    TestNgSwitchComponent,
+    TestPipeComponent,
+    TestSafeNavComponent,
+    TestLocalVariableComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,16 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">管道的用法</div>
+  <div class="panel-body">
+    {{currentTime}}
+    <br>
+    {{currentTime | date:'yyyy-MM-dd HH:mm:ss'}}
+    <br>
+    {{  currentTime | date:'fullDate' }}
+    <br>
+    <input type="text" class="form-control" [(ngModel)]="hero">
+    <input type="button" class="btn btn-success" (click)="pushClick()" value="add a hero">
+    <ul>
+      <li *ngFor = "let hero of heroes">{{hero | uppercase}}</li>
+    </ul>
+  </div>
+</div>
