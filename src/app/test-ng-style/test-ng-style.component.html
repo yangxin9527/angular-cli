@@ -3,8 +3,9 @@
     <h3 class="panel-title">ng style </h3>
   </div>
   <div class="panel-body">
-    <button class="btn">-</button>
-    <input type="text" class="form-control" ([ngModule])="age">
-    <button class="btn">+</button>
-  </div>
+    <button class="btn" (click)="numChange(-1)">-</button>
+    <input type="text" class="form-control" [value]="age" disabled>
+    <button class="btn" (click)="numChange(1)">+</button>
+    <p [ngStyle] ="currentStyle">测试字体大小</p>
+    </div>
 </div>

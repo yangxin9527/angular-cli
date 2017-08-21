@@ -6,13 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test-ng-style.component.scss']
 })
 export class TestNgStyleComponent implements OnInit {
-
+  public age:number = 10;
   constructor() { }
-
+  public currentStyle:{}={
+    fontSize:this.age+"px"
+  };
   ngOnInit() {
   }
-  public age:number = 10;
-  public numAdd():void{
-    this.age++
+
+  public numChange(num:number):void{
+  
+      this.age = this.age + num>=10?this.age + num:10;
+      console.log(this.age);
+      this.currentStyle['fontSize']=this.age+"px"
+     
+ 
+
   }
 }
