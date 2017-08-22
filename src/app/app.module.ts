@@ -15,6 +15,9 @@ import { TestNgSwitchComponent } from './test-ng-switch/test-ng-switch.component
 import { TestPipeComponent } from './test-pipe/test-pipe.component';
 import { TestSafeNavComponent } from './test-safe-nav/test-safe-nav.component';
 import { TestLocalVariableComponent } from './test-local-variable/test-local-variable.component';
+import { TestValueBindComponent } from './test-value-bind/test-value-bind.component';
+import { TestTwowayBindComponent } from './test-twoway-bind/test-twoway-bind.component';
+import { TestChildComponent } from './test-twoway-bind/test-child/test-child.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { TestLocalVariableComponent } from './test-local-variable/test-local-var
     TestNgSwitchComponent,
     TestPipeComponent,
     TestSafeNavComponent,
-    TestLocalVariableComponent
+    TestLocalVariableComponent,
+    TestValueBindComponent,
+    TestTwowayBindComponent,
+    TestChildComponent
   ],
   imports: [
     BrowserModule,

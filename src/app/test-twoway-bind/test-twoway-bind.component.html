@@ -1,0 +1,7 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">双向绑定在父子组件</div>
+    <div class="panel-body">
+      <p [style.color]="color">颜色为{{color}}</p>
+      <test-child [(childcolor)]="color" ></test-child>
+    </div>
+  </div>
