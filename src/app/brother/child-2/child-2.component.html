@@ -1,5 +1,8 @@
 <div class="panel panel-primary">
     <div class="panel-heading">child-2</div>
     <div class="panel-body">
+      <ul>
+        <li *ngFor="let item of childArray2;index as index">{{index+1}}.  {{item | date:'hh:mm ss'}}</li>
+      </ul>
     </div>
   </div>

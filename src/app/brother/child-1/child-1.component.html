@@ -2,5 +2,8 @@
     <div class="panel-heading">child-1</div>
     <div class="panel-body">
       <input type="button" class="btn btn-primary" (click)="testClick()"  value="add">
+      <ul>
+        <li *ngFor="let time of childArray;index as i">{{i+1}}. {{time|date:'shortTime'}}</li>
+      </ul>
     </div>
   </div>

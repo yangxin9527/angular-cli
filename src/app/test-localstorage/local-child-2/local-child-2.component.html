@@ -1,0 +1,18 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">收到的内容</div>
+    <div class="panel-body">
+      <button class="btn btn-success" (click)="showConversation()" >显示内容</button>
+        <div class="alert alert-success" *ngFor="let item of currentConversation?.data" >
+            <div class="media" *ngIf="item.profile.id==1">
+              <div class="media-left">
+                <a href="#">
+                          <img class="media-object" [src]="item.profile?.profilePic" width="50" alt="...">
+                        </a>
+              </div>
+              <div class="media-body " >
+                <h4 class="media-heading">{{item.profile?.name}} <span class="pull-right">{{item.time | date:"shortTime"}}</span></h4>
+                {{item.message}}
+              </div>
+            </div>
+    </div>
+  </div>

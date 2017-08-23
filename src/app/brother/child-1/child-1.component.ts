@@ -7,9 +7,12 @@ import { EventServiceService } from './../service/event-service.service';
   styleUrls: ['./child-1.component.scss']
 })
 export class Child1Component implements OnInit {
+  public childArray:Array<any>=[];
   constructor(public event:EventServiceService) { }
   public testClick():void {
-    this.event.testArray.next("组件触发");
+    let time = new Date();
+    this.childArray.push(time)
+    this.event.testArray.next(time.toString());
   }
 
   ngOnInit() {
